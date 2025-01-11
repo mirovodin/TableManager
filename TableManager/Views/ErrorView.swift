@@ -6,7 +6,7 @@ import UIKit
 
 final class ErrorView: UIView {
     
-    private lazy var errorLabel: UILabel = {
+    private var errorLabel: UILabel = {
         let errorLabel = UILabel()
         errorLabel.text = "An error occurred, please try again"
         errorLabel.textAlignment = .center
@@ -16,7 +16,7 @@ final class ErrorView: UIView {
         return errorLabel
     }()
     
-    private lazy var errorImage: UIImageView = {
+    private var errorImage: UIImageView = {
         let image = UIImage(systemName: "cloud.bolt.fill")?.withRenderingMode(.alwaysTemplate)
         let view = UIImageView(image: image)
         view.contentMode = .scaleAspectFill

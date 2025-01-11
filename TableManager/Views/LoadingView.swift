@@ -6,7 +6,7 @@ import UIKit
 
 final class LoadingView: UIView {
     
-    private lazy var loadingIndicator: UIActivityIndicatorView = {
+    private var loadingIndicator: UIActivityIndicatorView = {
         let loadingIndicator = UIActivityIndicatorView()
         loadingIndicator.style = .large
         loadingIndicator.color = .systemBlue
@@ -54,4 +54,3 @@ private extension LoadingView {
         ])
     }
 }
-

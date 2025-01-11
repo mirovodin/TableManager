@@ -6,7 +6,7 @@ import UIKit
 
 final class EmptyView: UIView {
     
-    private lazy var emptyLabel: UILabel = {
+    private var emptyLabel: UILabel = {
         let label = UILabel()
         label.text = ""
         label.textAlignment = .center
@@ -17,7 +17,7 @@ final class EmptyView: UIView {
         return label
     }()
     
-    private lazy var emptyImage: UIImageView = {
+    private var emptyImage: UIImageView = {
         let image = UIImage(systemName: "photo.on.rectangle.angled")?.withRenderingMode(.alwaysTemplate)
         let view = UIImageView(image: image)
         view.contentMode = .scaleAspectFill

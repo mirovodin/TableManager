@@ -26,9 +26,9 @@ final class ModuleAlphaView: UIView {
         return view
     }()
     
-    private lazy var loadingView = LoadingView()
-    private lazy var emptyView = EmptyView()
-    private lazy var errorView = ErrorView()
+    private var loadingView = LoadingView()
+    private var emptyView = EmptyView()
+    private var errorView = ErrorView()
     
     private let presenter: ModuleAlphaPresenterProtocol
 
